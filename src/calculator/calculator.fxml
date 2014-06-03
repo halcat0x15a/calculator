@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="calculator.Calculator">
+	<BorderPane AnchorPane.rightAnchor="0"
+		AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0"
+		AnchorPane.bottomAnchor="0">
+		<top>
+			<TextField fx:id="display" alignment="BASELINE_RIGHT" />
+		</top>
+		<center>
+			<GridPane hgap="5" vgap="5">
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="0" GridPane.rowIndex="0">(</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="1" GridPane.rowIndex="0">)</Button>
+				<Button onAction="#clear" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="2" GridPane.rowIndex="0">C</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="0" GridPane.rowIndex="1">7</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="1" GridPane.rowIndex="1">8</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="2" GridPane.rowIndex="1">9</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="0" GridPane.rowIndex="2">4</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="1" GridPane.rowIndex="2">5</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="2" GridPane.rowIndex="2">6</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="0" GridPane.rowIndex="3">1</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="1" GridPane.rowIndex="3">2</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="2" GridPane.rowIndex="3">3</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="0" GridPane.rowIndex="4">0</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="1" GridPane.rowIndex="4">.</Button>
+				<Button onAction="#calc" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="2" GridPane.rowIndex="4">=</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="3" GridPane.rowIndex="0">%</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="3" GridPane.rowIndex="1">/</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="3" GridPane.rowIndex="2">*</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="3" GridPane.rowIndex="3">-</Button>
+				<Button onAction="#input" maxWidth="Infinity" maxHeight="Infinity"
+					GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+					GridPane.columnIndex="3" GridPane.rowIndex="4">+</Button>
+			</GridPane>
+		</center>
+	</BorderPane>
+</AnchorPane>
+
